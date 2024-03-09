@@ -3,6 +3,7 @@
 import  "./About.scss";
 
 const About: React.FC = () => {
+
     return (
         <section id="about">
             <div className="container">
