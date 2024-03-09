@@ -1,3 +1,21 @@
-// main {
-//     min-height: 100vh;
-// }
+main {
+    min-height: 100vh;
+}
+
+.scroll-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: none;
+    transition: background-color 0.3s ease;
+    z-index: 9999; /* Ensure it appears on top of other content */
+}
+
+.scroll-top-button:hover {
+    background-color: #DD4B27;
+}
