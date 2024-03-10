@@ -13,20 +13,21 @@ header {
                 border-radius: 10px;
                 width: 80%;
                 height: auto;
-                display: block; /* Ensure the logo is displayed as a block element */
+                display: block;
+                /* Ensure the logo is displayed as a block element */
             }
         }
-        
-        nav {
+
+        .nav {
             float: right;
-        
+
             ul {
                 list-style: none;
-        
+
                 li {
                     display: inline;
                     margin-right: 20px;
-        
+
                     a {
                         text-decoration: none;
                         color: #333;
@@ -34,10 +35,51 @@ header {
                         text-transform: uppercase;
                         transition: color 0.3s ease;
                     }
+
                     a:hover {
                         color: #FF5733;
                     }
                 }
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        // Mobile navigation
+        .toaster-nav {
+            float: right;
+
+            #toaster-toggle {
+                display: none;
+            }
+
+            .toaster-toggle-label {
+                display: block;
+                cursor: pointer;
+                position: relative;
+                padding: 10px;
+                
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 4px;
+                    background-color: #000;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .toaster-nav-links {
+                display: none;
+
+                ul {
+                    list-style: none;
+                }
+            }
+
+            @media screen and (min-width: 769px) {
+                display: none;
             }
         }
     }
