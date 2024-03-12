@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import { useState } from "react";
 
 import "./Header.scss";
 import logo from '../../images/milen-logo.png';
@@ -11,6 +12,12 @@ interface HeaderProps {
 }
 
 const Header: React.FC = () => {
+    const [isChecked, setIsChecked] = useState(false);
+
+    const handleCheckedState = () => {
+        setIsChecked(!isChecked);
+        
+    }
 
     return (
         <header>
@@ -27,7 +34,11 @@ const Header: React.FC = () => {
                     </ul>
                 </nav>
                 <nav className="toaster-nav">
-                    <input type="checkbox" id="toaster-toggle" />
+                    <input type="checkbox"
+                        id="toaster-toggle"
+                        checked={isChecked}
+                        onChange={handleCheckedState}
+                    />
                     <label htmlFor="toaster-toggle" className="toaster-toggle-label"><span></span><span></span></label>
                     <div className="toaster-nav-links">
                         <ul>
