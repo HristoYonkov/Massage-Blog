@@ -16,7 +16,6 @@ const Header: React.FC = () => {
 
     const handleCheckedState = () => {
         setIsChecked(!isChecked);
-        
     }
 
     return (
