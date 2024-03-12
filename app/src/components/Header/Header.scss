@@ -50,6 +50,7 @@ header {
         // Mobile navigation
         .toaster-nav {
             float: right;
+            position: relative;
 
             #toaster-toggle {
                 display: none;
@@ -60,22 +61,55 @@ header {
                 cursor: pointer;
                 position: relative;
                 padding: 10px;
-                
+
                 span {
                     display: block;
                     width: 30px;
                     height: 4px;
                     background-color: #000;
                     margin-bottom: 5px;
+                    transition: transform 0.3s ease-in-out;
                 }
+            }
+
+            #toaster-toggle:checked+.toaster-toggle-label span:nth-of-type(1) {
+                transform: translateY(5px) rotate(45deg);
+            }
+
+            #toaster-toggle:checked+.toaster-toggle-label span:nth-of-type(2) {
+                transform: translateY(-4.5px) rotate(-45deg);
             }
 
             .toaster-nav-links {
                 display: none;
+                position: absolute;
+                text-align: center;
+                top: 1;
+                right: 10px;
+                width: 200px;
+                background: #f4f4f4;
+                border-radius: 5px;
+                overflow: hidden;
 
                 ul {
                     list-style: none;
+
+                    li:last-child a {
+                        border-bottom: none;
+                    }
                 }
+
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: #000;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+
+            #toaster-toggle:checked~.toaster-nav-links {
+                display: block;
             }
 
             @media screen and (min-width: 769px) {
