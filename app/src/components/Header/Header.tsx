@@ -26,10 +26,11 @@ const Header: React.FC = () => {
                 </div>
                 <nav className="nav">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#book">Book Massage</a></li>
+                        {['about', 'services', 'contact', 'book massage'].map((item) => (
+                            <li key={`link-${item}`}>
+                                <a href={`#${item}`}>{item}</a>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
                 <nav className="toaster-nav">
@@ -41,10 +42,11 @@ const Header: React.FC = () => {
                     <label htmlFor="toaster-toggle" className="toaster-toggle-label"><span></span><span></span></label>
                     <div className="toaster-nav-links">
                         <ul>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#book">Book Massage</a></li>
+                        {['about', 'services', 'contact', 'book massage'].map((item) => (
+                            <li key={`link-${item}`} onClick={handleCheckedState}>
+                                <a href={`#${item}`}>{item}</a>
+                            </li>
+                        ))}
                         </ul>
                     </div>
                 </nav>
