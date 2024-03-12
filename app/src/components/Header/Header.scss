@@ -90,10 +90,14 @@ header {
                 background: #f4f4f4;
                 border-radius: 5px;
                 overflow: hidden;
+                animation: slideIn 0.5s ease forwards;
 
                 ul {
                     list-style: none;
-
+                    
+                    li {
+                        animation: slideIn 0.3s ease forwards;
+                    }
                     li:last-child a {
                         border-bottom: none;
                     }
@@ -117,4 +121,9 @@ header {
             }
         }
     }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
