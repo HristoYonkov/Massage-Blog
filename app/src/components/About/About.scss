@@ -1,0 +1,21 @@
+#about {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.img-container-about {
+    width: 50%;
+
+    img {
+        max-width: 100%;
+        display: block;
+        border-radius: 12px;
+    }
+}
+
+.article-container-about {
+    width: 50%;
+}
