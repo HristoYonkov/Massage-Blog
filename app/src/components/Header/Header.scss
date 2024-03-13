@@ -51,6 +51,7 @@ header {
         .toaster-nav {
             float: right;
             position: relative;
+            z-index: 9999;
 
             #toaster-toggle {
                 display: none;
