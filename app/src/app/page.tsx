@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 import About from "@/components/About/About";
 import "./page.scss";
+import Work from "@/components/Work/Work";
+import { smoothScroll } from "@/functions/smoothScroll";
 
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,9 +33,14 @@ export default function Home() {
         });
     };
 
+    useEffect(() => {
+        smoothScroll();
+    }, []);
+
     return (
         <main>
             <About />
+            <Work />
             <button
                 className={`scroll-top-button ${isVisible ? 'show' : ''}`}
                 onClick={scrollToTop}>
