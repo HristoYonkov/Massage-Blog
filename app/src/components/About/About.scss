@@ -17,25 +17,28 @@
             border-radius: 12px;
         }
     
-        @media screen and (max-width: 900px) {
-            // width: auto;
+        @media screen and (max-width: 768px) {
+            width: 59%;
+        }
+        @media screen and (max-width: 450px) {
+            width: auto;
         }
     }
     
     .article-container-about {
         width: 50%;
     
-        @media screen and (max-width: 900px) {
-            // width: auto;
+        @media screen and (max-width: 768px) {
+            width: auto;
         }
         p {
             margin-bottom: 10px;
         }
     }
 
-    @media screen and (max-width: 900px) {
-        // flex-direction: column;
-        // align-items: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
