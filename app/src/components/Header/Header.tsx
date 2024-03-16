@@ -39,7 +39,7 @@ const Header: React.FC = () => {
                         checked={isChecked}
                         onChange={handleCheckedState}
                     />
-                    <label htmlFor="toaster-toggle" className="toaster-toggle-label"><span></span><span></span></label>
+                    <label htmlFor="toaster-toggle" className="toaster-toggle-label"><span></span><span></span><span></span></label>
                     <div className="toaster-nav-links">
                         <ul>
                         {['about', 'services', 'contact', 'book massage'].map((item) => (
