@@ -61,7 +61,6 @@ header {
                 display: block;
                 cursor: pointer;
                 position: relative;
-                padding: 10px;
 
                 span {
                     display: block;
@@ -80,12 +79,15 @@ header {
             #toaster-toggle:checked+.toaster-toggle-label span:nth-of-type(2) {
                 transform: translateY(-4.5px) rotate(-45deg);
             }
+            #toaster-toggle:checked+.toaster-toggle-label span:nth-of-type(3) {
+                display: none;
+            }
 
             .toaster-nav-links {
                 display: none;
                 position: absolute;
                 text-align: center;
-                top: 1;
+                top: 27px;
                 right: 10px;
                 width: 200px;
                 background: #f4f4f4;
