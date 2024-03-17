@@ -1,8 +1,11 @@
 "use client"
 
+import { useState } from "react";
 import "./About.scss";
 
 const About: React.FC = () => {
+    const [index, setIndex] = useState(0);
+
 
     return (
         <section id="about">
