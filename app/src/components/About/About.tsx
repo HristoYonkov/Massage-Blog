@@ -1,17 +1,23 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./About.scss";
+import { aboutSectionInfo } from "@/data/aboutSliderData";
 
 const About: React.FC = () => {
     const [index, setIndex] = useState(0);
+    const info = aboutSectionInfo[index];
 
+    useEffect(() => {
+        setIndex(index + 1);
+        
+    }, [index]);
 
     return (
         <section id="about">
             <div className="slider-container">
                 <div className="img-container-about">
-                    <img src="https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/417524460_374351538542578_7663349785761082265_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cPl9Faevjc4AX-WZeO-&_nc_ht=scontent.fsof8-1.fna&oh=00_AfBRFVjVmSBHjWK5pw8Cj8Pn1Lt_qjuEhyJYwaHX4Cejgg&oe=65FA62F6" alt="about-image" />
+                    <img src={info.imgSrc} alt="about-image" />
                 </div>
                 <article className="article-container-about">
                     <h2>About Me</h2>
