@@ -8,9 +8,14 @@ const About: React.FC = () => {
     const [index, setIndex] = useState(0);
     const info = aboutSectionInfo[index];
 
+    const slide = (page: number, move: string): void => {
+        if (page > 2) setIndex(0);
+        if (page < 0) setIndex(2);
+    }
+
     useEffect(() => {
         setIndex(index + 1);
-        
+
     }, [index]);
 
     return (
