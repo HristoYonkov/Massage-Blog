@@ -9,14 +9,14 @@ const About: React.FC = () => {
     const info = aboutSectionInfo[index];
 
     const slide = (page: number, move: string): void => {
-        if (page > 2) setIndex(0);
-        if (page < 0) setIndex(2);
+        if (page + 1 > 2) setIndex(0);
+        if (page - 1 < 0) setIndex(2);
     }
 
     useEffect(() => {
-        setIndex(index + 1);
+        // setIndex(index + 1);
 
-    }, [index]);
+    }, []);
 
     return (
         <section id="about">
