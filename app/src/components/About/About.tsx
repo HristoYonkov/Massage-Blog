@@ -8,15 +8,22 @@ const About: React.FC = () => {
     const [index, setIndex] = useState(0);
     const info = aboutSectionInfo[index];
 
-    const slide = (page: number, move: string): void => {
-        if (page + 1 > 2) setIndex(0);
-        if (page - 1 < 0) setIndex(2);
+    const slide = (move: string): void => {
+        if (move === '+') {
+            if (index + 1 > 2) {
+                setIndex(0);
+            } else {
+                setIndex(index + 1);
+            }
+        }
+        if (move === '-') {
+            if (index - 1 < 0) {
+                setIndex(2);
+            } else {
+                setIndex(index - 1);
+            }
+        }
     }
-
-    useEffect(() => {
-        // setIndex(index + 1);
-
-    }, []);
 
     return (
         <section id="about">
@@ -33,8 +40,8 @@ const About: React.FC = () => {
                     <p>I like to spend time in mountains and i enjoy riding offroad. If you are feeling well after the massage feel free to come and ride with me!</p>
                 </article>
             </div>
-            <button className="prev-btn">p</button>
-            <button className="next-btn">n</button>
+            <button className="prev-btn" onClick={() => (slide('-'))}>p</button>
+            <button className="next-btn" onClick={() => (slide('+'))}>n</button>
         </section>
 
     )
