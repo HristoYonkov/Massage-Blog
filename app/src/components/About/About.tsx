@@ -32,12 +32,8 @@ const About: React.FC = () => {
                     <img src={info.imgSrc} alt="about-image" />
                 </div>
                 <article className="article-container-about">
-                    <h2>About Me</h2>
-                    <p>Welcome to Relax & Rejuvenate Massage Therapy! I specialize in providing high-quality massage services to help you unwind, destress, and feel your best.</p>
-                    <h1>My Experience</h1>
-                    <p>Welcome to Relax & Rejuvenate Massage Therapy! I specialize in providing high-quality massage services to help you unwind, destress, and feel your best.</p>
-                    <h1>My Hobbies</h1>
-                    <p>I like to spend time in mountains and i enjoy riding offroad. If you are feeling well after the massage feel free to come and ride with me!</p>
+                    <h2>{info.title}</h2>
+                    <p>{info.description}</p>
                 </article>
             </div>
             <button className="prev-btn" onClick={() => (slide('-'))}>p</button>
