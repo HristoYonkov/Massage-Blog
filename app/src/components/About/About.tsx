@@ -36,8 +36,8 @@ const About: React.FC = () => {
                     <p>{info.description}</p>
                 </article>
             </div>
-            <button className="prev-btn" onClick={() => (slide('-'))}>p</button>
-            <button className="next-btn" onClick={() => (slide('+'))}>n</button>
+            <button className="prev-btn" onClick={() => (slide('-'))}>&#60;</button>
+            <button className="next-btn" onClick={() => (slide('+'))}>&#62;</button>
         </section>
 
     )
