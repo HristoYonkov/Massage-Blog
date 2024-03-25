@@ -6,10 +6,10 @@ import { useState } from "react";
 import "./Header.scss";
 import logo from '../../images/milen-logo.png';
 
-interface HeaderProps {
-    children: React.ReactNode;
-    className?: string;
-}
+// interface HeaderProps {
+//     children: React.ReactNode;
+//     className?: string;
+// }
 
 const Header: React.FC = () => {
     const [isChecked, setIsChecked] = useState(false);
