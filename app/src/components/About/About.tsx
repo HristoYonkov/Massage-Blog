@@ -54,7 +54,7 @@ const About: React.FC = () => {
 
     return (
         <section id="about">
-            <div ref={sliderContainerRef} className={`slider-container ${isSlidingRight ? 'slideRight': 'slideLeft'} ${animationTrigger ? 'animate' : ''}`}>
+            <div ref={sliderContainerRef} className={`slider-container ${isSlidingRight ? 'slideRight' : 'slideLeft'} ${animationTrigger ? 'animate' : ''}`}>
                 <div className="img-container-about">
                     <img src={info.imgSrc} alt="about-image" />
                 </div>
