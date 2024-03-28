@@ -18,7 +18,7 @@ const Work: React.FC = () => {
             </div>
             <div className="services-container">
                 <div className="img-container-services">
-                    <img src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/414495918_356145687029830_3303627105665333838_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jrDwj6YIGcIAX_TD3YB&_nc_ht=scontent.fsof11-1.fna&oh=00_AfDVOQDCB3DFq2-2DrZ8yX1_Ndy3jicNzo4Jkp85I3GMDg&oe=6606E959" />
+                    <img src="https://scontent.fsof11-1.fna.fbcdn.net/v/t39.30808-6/387783150_311797281464671_4308281017703778320_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h18YYGqwsLIAX-UW3SA&_nc_ht=scontent.fsof11-1.fna&oh=00_AfAcnUqO5ail8iWjlwnEOdfnFlwiAbGXBRyNpFP7NePwlw&oe=6607201F" />
                 </div>
                 <article className="article-container-services">
                     <h2>Deep Tissue Massage</h2>
