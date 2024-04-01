@@ -56,7 +56,7 @@ const About: React.FC = () => {
         <section id="about">
             <div ref={sliderContainerRef} className={`slider-container ${isSlidingRight ? 'slideRight' : 'slideLeft'} ${animationTrigger ? 'animate' : ''}`}>
                 <div className="img-container-about">
-                    <img src={info.imgSrc} alt="about-image" />
+                    <img src={`/images/${info.imgSrc}`} alt="about-image" />
                 </div>
                 <article className="article-container-about">
                     <h2>{info.title}</h2>
