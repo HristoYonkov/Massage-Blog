@@ -5,6 +5,7 @@ import "./Work.scss";
 const Work: React.FC = () => {
 
     return (
+        // TODO: To map the containers!
         <section id="services">
             <h2>Services</h2>
             <div className="services-container">
