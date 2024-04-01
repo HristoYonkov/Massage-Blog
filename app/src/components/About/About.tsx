@@ -15,29 +15,29 @@ const About: React.FC = () => {
     const slide = (move: string): void => {
         if (move === '+') {
             if (index + 1 > 2) {
-                setIndex(0);
-                setIsSlidingRight(true);
+                setIndex(state => state = 0);
+                setIsSlidingRight(state => state = true);
             } else {
-                setIndex(index + 1);
-                setIsSlidingRight(true);
+                setIndex(state => state + 1);
+                setIsSlidingRight(state => state = true);
             }
         }
         if (move === '-') {
             if (index - 1 < 0) {
-                setIndex(2);
-                setIsSlidingRight(false);
+                setIndex(state => state = 2);
+                setIsSlidingRight(state => state = false);
             } else {
-                setIndex(index - 1);
-                setIsSlidingRight(false);
+                setIndex(state => state - 1);
+                setIsSlidingRight(state => state = false);
             }
         }
 
-        setAnimationTrigger(true);
+        setAnimationTrigger(state => state = true);
     }
 
     useEffect(() => {
         const animationEndHandler = () => {
-            setAnimationTrigger(false);
+            setAnimationTrigger(state => state = false);
         };
 
         if (sliderContainerRef.current) {
