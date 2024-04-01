@@ -13,9 +13,9 @@ export default function Home() {
     const handleScroll = () => {
         const scrollY = window.scrollY;
         if (scrollY > 100) {
-            setIsVisible(true);
+            setIsVisible(state => state = true);
         } else {
-            setIsVisible(false);
+            setIsVisible(state => state = false);
         }
     };
 
@@ -43,7 +43,7 @@ export default function Home() {
             <Work />
             <button
                 className={`scroll-top-button ${isVisible ? 'show' : ''}`}
-                onClick={scrollToTop}>
+                onClick={() => scrollToTop()}>
                 &#8648;
             </button>
         </main>
