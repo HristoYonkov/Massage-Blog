@@ -4,8 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 import "./Header.scss";
-import logo from '../../images/milen-logo.png';
-
+import logo from '../../../public/images/milen-logo.png';
 
 const Header: React.FC = () => {
     const [isChecked, setIsChecked] = useState(false);
