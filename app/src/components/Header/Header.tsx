@@ -28,6 +28,7 @@ const Header: React.FC = () => {
                         ))}
                     </ul>
                 </nav>
+                {/* TODO: Add a hover color on links same as in desktop navigation! */}
                 <nav className="toaster-nav">
                     <input type="checkbox"
                         id="toaster-toggle"
