@@ -1,10 +1,10 @@
-interface aboutSectionData {
+interface IaboutSliderData {
     imgSrc: string,
     title: string,
     description: string
 }
 
-export const aboutSectionInfo: aboutSectionData[] = [
+export const aboutSliderData: IaboutSliderData[] = [
     {
         imgSrc: '417524460_374351538542578_7663349785761082265_n.jpg',
         title: 'About Me',
