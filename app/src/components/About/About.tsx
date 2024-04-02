@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import "./About.scss";
-import { aboutSectionInfo } from "@/data/aboutSliderData";
+import { aboutSliderData } from "@/data/aboutSliderData";
 
 const About: React.FC = () => {
     const [index, setIndex] = useState(0);
@@ -10,7 +10,7 @@ const About: React.FC = () => {
     const [animationTrigger, setAnimationTrigger] = useState(false);
     const sliderContainerRef = useRef<HTMLDivElement>(null);
 
-    const info = aboutSectionInfo[index];
+    const info = aboutSliderData[index];
 
     const slide = (move: string): void => {
         if (move === '+') {
