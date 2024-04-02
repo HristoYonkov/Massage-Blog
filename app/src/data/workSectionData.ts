@@ -6,7 +6,7 @@ interface IworkSectionData {
 
 export const workSectionData: IworkSectionData[] = [
     {
-        imgSrc: '417524460_374351538542578_7663349785761082265_n.jpg',
+        imgSrc: '411476768_347992454511820_4352877292626657046_n.jpg',
         title: 'Swedish Massage',
         description: 'Welcome to Relax & Rejuvenate Massage Therapy! I specialize in providing high-quality massage services to help you unwind, destress, and feel your best.'
     },
@@ -21,7 +21,7 @@ export const workSectionData: IworkSectionData[] = [
         description: 'I like to spend time in mountains and i enjoy riding offroad. If you are feeling well after the massage feel free to come and ride with me!'
     },
     {
-        imgSrc: '411476768_347992454511820_4352877292626657046_n.jpg',
+        imgSrc: '417524460_374351538542578_7663349785761082265_n.jpg',
         title: 'Suction Cups',
         description: 'I like to spend time in mountains and i enjoy riding offroad. If you are feeling well after the massage feel free to come and ride with me!'
     },
