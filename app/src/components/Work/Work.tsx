@@ -11,8 +11,8 @@ const Work: React.FC = () => {
     return (
         <section id="services">
             <h2>Services</h2>
-            {info.map((item) => (
-                <div className="services-container">
+            {info.map((item, index) => (
+                <div key={`container-${index}`} className="services-container">
                     <div className="img-container-services">
                         <img src={`/images/${item.imgSrc}`} />
                     </div>
