@@ -6,6 +6,7 @@ import About from "@/components/About/About";
 import "./page.scss";
 import Work from "@/components/Work/Work";
 import { smoothScroll } from "@/functions/smoothScroll";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false);
@@ -41,6 +42,7 @@ export default function Home() {
         <main>
             <About />
             <Work />
+            <Contact />
             <button
                 className={`scroll-top-button ${isVisible ? 'show' : ''}`}
                 onClick={() => scrollToTop()}>
