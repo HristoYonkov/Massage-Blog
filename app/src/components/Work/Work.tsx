@@ -9,7 +9,6 @@ const Work: React.FC = () => {
     const info = workSectionData;
 
     return (
-        // TODO: To map the services-container's!
         <section id="services">
             <h2>Services</h2>
             {info.map((item) => (
@@ -24,7 +23,6 @@ const Work: React.FC = () => {
                 </div>
             ))}
         </section>
-
     )
 }
 
