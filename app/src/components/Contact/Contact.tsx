@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className='cards-holder-contact'>
                     <img src={`/images/mobile.png`} alt="mobile" />
-                    <a href="tel: +359 (899) 567-539">+359 (899) 567-539</a>
+                    <a href="tel: +359 (899) 567-539">+359 (877) 754-655</a>
                 </div>
             </article>
         </section>
