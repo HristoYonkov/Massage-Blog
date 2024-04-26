@@ -1,5 +1,6 @@
 "use client"
 
+import { FaGithubSquare } from "react-icons/fa";
 import  "./Footer.scss";
 
 const Footer: React.FC = () => {
@@ -7,7 +8,8 @@ const Footer: React.FC = () => {
     return (
         <footer>
             <div className="container">
-                <p>&copy; 2024 Relax & Rejuvenate Massage Therapy</p>
+                <a href="https://github.com/HristoYonkov"><FaGithubSquare /></a>
+                <p>&copy; 2024 Hristo Yonkov</p>
             </div>
         </footer>
     )
