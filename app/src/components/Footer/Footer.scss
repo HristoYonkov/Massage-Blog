@@ -3,4 +3,22 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+
+    .container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-self: flex-start;
+            font-size: 26px;
+            align-items: center;
+        }
+
+        P {
+            font-size: 14px;
+        }
+    }
 }
