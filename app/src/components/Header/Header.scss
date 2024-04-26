@@ -39,6 +39,10 @@ header {
                     a:hover {
                         color: #FF5733;
                     }
+
+                }
+                li:nth-child(4) {
+                    text-decoration: line-through;
                 }
             }
 
@@ -103,6 +107,8 @@ header {
                     }
                     li:last-child a {
                         border-bottom: none;
+                        text-decoration: line-through;
+                        
                     }
                 }
 
