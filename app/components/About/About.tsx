@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import "./About.scss";
-import { aboutSliderData } from "@/data/aboutSliderData";
+import { aboutSliderData } from "../../data/aboutSliderData";
 
 const About: React.FC = () => {
     const [index, setIndex] = useState(0);

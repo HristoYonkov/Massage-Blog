@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-import About from "@/components/About/About";
+import About from "../components/About/About";
 import "./page.scss";
-import Work from "@/components/Work/Work";
-import { smoothScroll } from "@/functions/smoothScroll";
-import Contact from "@/components/Contact/Contact";
+import Work from "../components/Work/Work";
+import { smoothScroll } from "../functions/smoothScroll";
+import Contact from "../components/Contact/Contact";
 
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false);

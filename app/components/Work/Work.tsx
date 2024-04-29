@@ -1,6 +1,6 @@
 "use client"
 
-import { workSectionData } from "@/data/workSectionData";
+import { workSectionData } from "../../data/workSectionData";
 
 import "./Work.scss";
 
